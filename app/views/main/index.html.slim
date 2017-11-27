@@ -1,0 +1,25 @@
+.container
+  form#search-form action=""
+    label for="from"
+      | From
+    input#from type="text" name="from"
+    label for="to"
+      | To
+    input#to type="text" name="to"
+  button#refresh-btn type="submit"
+    | Refresh
+  table#main-table
+    thead
+      th Title
+      th Revenue
+    tbody
+      - @result.each do |r|
+        tr
+          td
+            = r["title"]
+          td
+            = r["revenue"]
+      tr
+        td Total
+        td
+          = @result.map { |r| r["revenue"].to_d.round(2) }.sum

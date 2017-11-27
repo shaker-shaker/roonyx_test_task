@@ -1,0 +1,23 @@
+// Place all the styles related to the main controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#main-table{
+  margin: 10px auto;
+  width: 400px;
+}
+
+.container{
+  width: 600px;
+  margin: 0 auto;
+  border: 1px black solid;
+  padding: 10px;
+}
+
+#search-form{
+  display: inline;
+}
+
+#search-form input {
+  margin: 0 10px;
+}
